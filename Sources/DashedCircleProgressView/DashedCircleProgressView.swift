@@ -15,9 +15,6 @@ open class DashedCircleProgressView: UIView {
         public let endAngle: CGFloat
     }
 
-    // MARK: - Internal types
-    // MARK: - Private types
-
     // MARK: - Private properties
 
     private let configuration: Configuration
@@ -49,7 +46,7 @@ open class DashedCircleProgressView: UIView {
 
     // MARK: - Init
 
-    init(configuration: Configuration) {
+    public init(configuration: Configuration) {
         self.configuration = configuration
 
         super.init(frame: .zero)
