@@ -13,6 +13,22 @@ open class DashedCircleProgressView: UIView {
         public let startAngle: CGFloat
         /// Angle in radians (e.g: `2 * .pi`)
         public let endAngle: CGFloat
+
+        public init(
+            activeColor: UIColor,
+            trackColor: UIColor,
+            lineWidth: CGFloat,
+            minimalDashSpacing: Double,
+            startAngle: CGFloat,
+            endAngle: CGFloat
+        ) {
+            self.activeColor = activeColor
+            self.trackColor = trackColor
+            self.lineWidth = lineWidth
+            self.minimalDashSpacing = minimalDashSpacing
+            self.startAngle = startAngle
+            self.endAngle = endAngle
+        }
     }
 
     // MARK: - Private properties
