@@ -87,8 +87,8 @@ open class DashedCircleProgressView: UIView {
     }
 
     public func updateProgress(passed: Int, total: Int) {
-        passedCount = max(passed, 0)
         totalCount = max(total, 1)
+        passedCount = min(max(passed, 0), totalCount)
 
         updateLayersIfPossible()
     }
